@@ -70,6 +70,37 @@
             </div>
         </div>
     </section>
-	
+    <section class="section section-xs banner-img-1 team">
+
+        <div class="container">       
+            <div class="row g-3 justify-content-md-between justify-content-sm-center">
+            <div class="col-lg-4">
+                <div class="coundown-timer">
+                <i class="fa fa-smile-o"></i>
+                    <h5 class="counter">155.5</h5>
+                    <p>Visitors</p>
+            </div>
+            
+                </div>
+                <div class="col-lg-4">
+                <div class="coundown-timer">
+                <i class="fa fa-download"></i>
+                <h5 class="counter">500</h5>
+                <p>Downloads</p>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                <div class="coundown-timer">
+                <i class="fa fa-user"></i>
+                <h5 class="counter">798</h5>
+                <p>Members</p>
+                </div>
+                </div>
+
+            </div>
+      
+        </div>
+</section>
+
 
 <?php include "footer.php"?>

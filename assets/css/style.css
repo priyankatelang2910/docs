@@ -16,6 +16,14 @@
   src: url("../fonts/Sofia Pro SemiBold.woff2") format("woff2"), url("Sofia Pro SemiBold.woff") format("woff");
   font-style: normal;
   font-display: swap; }
+.bg-banner-size, .banner-img-1 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.banner-img-1 {
+  background-image: url(../images/banner/banner-img-1.jfif); }
+
 /* ----------------------------------------------------------
 :: Common CSS
 ---------------------------------------------------------- */
@@ -51,7 +59,7 @@
 .bg-tealblue-color {
   background-color: #1b6dc1; }
 
-.bg-banner-size {
+.bg-banner-size, .banner-img-1 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -570,7 +578,7 @@ h6 {
     width: 10px;
     top: 7px;
     left: 0px;
-    border-radius: 3px 0 3px 0;
+    border-radius: 0px 0 0px 0;
     background: #1b6dc1;
     display: block;
     z-index: 1; }
@@ -588,6 +596,31 @@ h6 {
     height: 90%;
     border-radius: 10px 0px 10px 0px;
     z-index: -1; }
+
+.team:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fdc648ab;
+  opacity: 0.90;
+  z-index: -1;
+  content: ""; }
+.team .coundown-timer {
+  background-color: #1b6dc142;
+  padding: 20px 10px;
+  text-align: center; }
+  .team .coundown-timer h5 {
+    color: #000;
+    font-weight: 600;
+    font-size: 2rem; }
+  .team .coundown-timer i {
+    color: #000;
+    font-weight: 500;
+    font-size: 3rem; }
+  .team .coundown-timer p {
+    font-size: 1.2rem; }
 
 /* ----------------------------------------------------------
 :: Footer
