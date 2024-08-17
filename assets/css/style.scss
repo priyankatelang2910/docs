@@ -895,49 +895,55 @@ footer {
           }
         }
       }
-      .social {
-        @media screen and (max-width: 767px) and (min-width: 320px) {
-          margin: 17px auto;
+      .social-icon{
+        margin: 15px 0 0;
+        .list-inline > li {
+            display: inline-block;
+            .icon-xxs.icon-rect, .icon-xxs.icon-rounded, .icon-xxs.icon-circle, .icon-xxs.icon-outlined {
+                width: 33px;
+                height: 33px;
+                line-height: 33px;
+                font-size: 17px;
+            }
+            .icon-circle {
+                border-radius: 2px;
+                text-align: center;
+            }
+            .icon-gray-light-filled {
+                border: none;
+                background: #e0e3e7;
+                text-decoration: none;
+                transition: all .3s linear;
+                &:hover{
+                    color: #fff;
+                    transform: rotate(360deg); 
+                }
+            }
+            .fa-facebook:hover {
+                background: #395b98;   
+            }
+            .fa-instagram:hover {
+                background: #F56040;   
+            }
+    
+            .fa-twitter:hover {
+                background: #2ca7e0;
+            }
+    
+            .fa-google-plus:hover {
+                background: #d95139;
+            }
+            .fa-linkedin-square:hover {
+                background: #0271ae;
+            }
+            .fa-pinterest:hover {
+                background: #c8232c;
+            }
+            .fa-youtube:hover {
+                background: #c4302b;
+            }        
         }
-        .icon {
-          width: 42px;
-          height: 42px;
-          color: #ffffff;
-          background: #00000014;
-          text-align: center;
-          display: inline-block;
-          vertical-align: middle;
-          line-height: 40px;
-          font-size: 1rem;
-          margin: 3px;
-          transition: all 0.3s;
-          &:hover {
-            transform: rotate(360deg);
-            color: #fff;
-          
-          }
-        }
-        .fa-facebook:hover {
-            background: #395b98;
-          
-        }
-        .fa-twitter:hover {
-            background: #2ca7e0;
-          color: #fff;
-        }
-        .fa-linkedin:hover {
-          background: #2ca7e0;
-          color: #fff;
-        }
-        .fa-instagram:hover {
-          background: #FD1D1D;
-         
-        }
-        .fa-youtube:hover {
-          background: red;
-          color: #fff;
-        }
-      }
+    } 
     }
     .footer-bottom {
       // color: #fff;

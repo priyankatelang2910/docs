@@ -692,37 +692,40 @@ footer {
         footer .footer-page .list-group li a:hover {
           color: #fff;
           margin-left: 5px; }
-    @media screen and (max-width: 767px) and (min-width: 320px) {
-      footer .footer-page .social {
-        margin: 17px auto; } }
-    footer .footer-page .social .icon {
-      width: 42px;
-      height: 42px;
-      color: #ffffff;
-      background: #00000014;
-      text-align: center;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 40px;
-      font-size: 1rem;
-      margin: 3px;
-      transition: all 0.3s; }
-      footer .footer-page .social .icon:hover {
-        transform: rotate(360deg);
-        color: #fff; }
-    footer .footer-page .social .fa-facebook:hover {
-      background: #395b98; }
-    footer .footer-page .social .fa-twitter:hover {
-      background: #2ca7e0;
-      color: #fff; }
-    footer .footer-page .social .fa-linkedin:hover {
-      background: #2ca7e0;
-      color: #fff; }
-    footer .footer-page .social .fa-instagram:hover {
-      background: #FD1D1D; }
-    footer .footer-page .social .fa-youtube:hover {
-      background: red;
-      color: #fff; }
+    footer .footer-page .social-icon {
+      margin: 15px 0 0; }
+      footer .footer-page .social-icon .list-inline > li {
+        display: inline-block; }
+        footer .footer-page .social-icon .list-inline > li .icon-xxs.icon-rect, footer .footer-page .social-icon .list-inline > li .icon-xxs.icon-rounded, footer .footer-page .social-icon .list-inline > li .icon-xxs.icon-circle, footer .footer-page .social-icon .list-inline > li .icon-xxs.icon-outlined {
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 17px; }
+        footer .footer-page .social-icon .list-inline > li .icon-circle {
+          border-radius: 2px;
+          text-align: center; }
+        footer .footer-page .social-icon .list-inline > li .icon-gray-light-filled {
+          border: none;
+          background: #e0e3e7;
+          text-decoration: none;
+          transition: all .3s linear; }
+          footer .footer-page .social-icon .list-inline > li .icon-gray-light-filled:hover {
+            color: #fff;
+            transform: rotate(360deg); }
+        footer .footer-page .social-icon .list-inline > li .fa-facebook:hover {
+          background: #395b98; }
+        footer .footer-page .social-icon .list-inline > li .fa-instagram:hover {
+          background: #F56040; }
+        footer .footer-page .social-icon .list-inline > li .fa-twitter:hover {
+          background: #2ca7e0; }
+        footer .footer-page .social-icon .list-inline > li .fa-google-plus:hover {
+          background: #d95139; }
+        footer .footer-page .social-icon .list-inline > li .fa-linkedin-square:hover {
+          background: #0271ae; }
+        footer .footer-page .social-icon .list-inline > li .fa-pinterest:hover {
+          background: #c8232c; }
+        footer .footer-page .social-icon .list-inline > li .fa-youtube:hover {
+          background: #c4302b; }
   footer .footer-bottom {
     padding-top: 20px; }
     footer .footer-bottom .footer-left p {

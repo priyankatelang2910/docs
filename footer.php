@@ -31,23 +31,19 @@
                         <h5>Get in Touch</h5>
                         <div class="footer-bar"></div>
                     </div>                
-                    <div class="social mb-3">
-                        <ul class="list-inline d-flex">
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank" class="icon icon-gray-light-filled"><i class="fa fa-facebook" aria-hidden="true" title="FACEBOOK"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/" target="_blank" class="icon"><i class="fa fa-twitter" aria-hidden="true" title="TWITTER"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/school/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true" title="linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/accounts/login/?next=//" target="_blank" class="icon"><i class="fa fa-instagram" aria-hidden="true" title="instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/" class="icon"><i class="fa fa-youtube" aria-hidden="true" title="youtube"></i></a>
-                            </li>
+                    <div class="social-icon ">
+                        <ul class="list-inline list-inline-xs">
+                            <li><a class="icon icon-xxs fa fa-facebook icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="_blank" title="facebook"></a></li>
+
+                            <li><a class="icon icon-xxs fa fa-twitter icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="_blank" title="twitter"></a></li>
+
+                            <li><a class="icon icon-xxs fa fa-google-plus icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="blank" title="google plus"></a></li>
+
+                            <li><a class="icon icon-xxs fa fa-linkedin-square icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="_blank" title="linkedin"></a></li>
+
+                            <li><a class="icon icon-xxs fa fa-youtube icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="_blank" title="youtube"></a></li>
+
+                            <li><a class="icon icon-xxs fa fa-instagram icon-circle icon-gray-light-filled" href="Javascript:void(0);" target="blank" title="instagram"></a></li>
                         </ul>
                     </div>
                 </div>
