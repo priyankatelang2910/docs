@@ -77,7 +77,7 @@
             <div class="col-lg-4">
                 <div class="coundown-timer">
                 <i class="fa fa-smile-o"></i>
-                    <h5 class="counter">155.5</h5>
+                    <h5 class="counter">155</h5>
                     <p>Visitors</p>
             </div>
             
