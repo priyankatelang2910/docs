@@ -85,6 +85,17 @@
 .icon-sm {
   font-size: 2.5rem; }
 
+.section-title {
+  margin-bottom: 30px; }
+  .section-title h2 {
+    font-size: 2.3rem;
+    color: #0341a7;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: -webkit-linear-gradient(#194792, #011b46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparen; }
+
 /*-------------------------------------------------------------------
 :: Common SCSS
 -------------------------------------------------------------------*/
@@ -622,6 +633,25 @@ h6 {
   .team .coundown-timer p {
     font-size: 1.2rem; }
 
+.counter-timer {
+  background-color: #fdc64894; }
+  .counter-timer .timer .data {
+    text-align: center;
+    border-right: 2px solid #000;
+    width: 30%; }
+    .counter-timer .timer .data h5 {
+      color: #1b6dc1;
+      font-weight: 600;
+      font-size: 2rem; }
+    .counter-timer .timer .data i {
+      color: #1b6dc1;
+      font-weight: 500;
+      font-size: 3rem; }
+    .counter-timer .timer .data p {
+      font-size: 1.2rem; }
+    .counter-timer .timer .data:last-child {
+      border-right: unset; }
+
 /* ----------------------------------------------------------
 :: Footer
 ---------------------------------------------------------- */
@@ -649,10 +679,17 @@ h6 {
 
 /*-----------------------*/
 footer {
-  background: #000000d6; }
+  background: #000000d6;
+  background: url(../images/footer-img.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid #b5b5b5;
+  position: relative;
+  z-index: 0; }
   footer:before {
     content: "";
-    background: #5C0F8B;
+    background: #1b6dc140;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -666,7 +703,7 @@ footer {
       font-size: 1.2rem;
       font-weight: 600; }
     footer .footer-page .footer-title h5 {
-      color: #ffffff9c; }
+      color: #010225; }
     footer .footer-page .footer-title .footer-bar {
       position: relative;
       margin-bottom: 30px; }
@@ -720,7 +757,7 @@ footer {
         color: #1b6dc1;
         font-family: "FontAwesome"; }
       footer .footer-page .list-group li a {
-        color: #fff;
+        color: #010225;
         transition: 0.4s; }
         footer .footer-page .list-group li a:hover {
           color: #fff;
