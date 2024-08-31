@@ -47,9 +47,14 @@
 
     <div class="container">
             <div class="row g-3 row-cols-1 row-cols-md-2 align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
-                <div class="col col-md-7">
+            <div class="col col-md-auto">
+                    <div class="img-wrap text-center about-img">
+                        <img src="assets/images/about-img.jpg" alt="about us" class="img-fluid">
+                    </div>
+                </div>    
+            <div class="col col-md-7">
                     <div class="section-title aos-init aos-animate" data-aos="zoom-out-up">
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+                        <h2>Lorem Ipsum is simply dummy text of the printing </h2>
                     </div>
                     <div class="text-justify aos-init" data-aos="fade-right">                        
                         <p>
@@ -62,11 +67,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col col-md-auto">
-                    <div class="img-wrap text-center about-img">
-                        <img src="assets/images/about-img.jpg" alt="about us" class="img-fluid">
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -138,5 +139,7 @@
         </div>
 </section>
 
-
+<a id="totop" href="#top" style="display: inline;" class="top-visible">
+    <i class="fa fa-caret-up"></i>
+</a>
 <?php include "footer.php"?>

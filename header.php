@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>New Project</title>
+	<title>UR Cache Cleaner</title>
 	<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+   
      <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- font awesome -->
@@ -13,7 +13,7 @@
     <!-- swiper css --> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!--====== lightgallery css ======-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery/latest/css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdel  ivr.net/lightgallery/latest/css/lightgallery.css">
     <!--====== flaticon css ======-->
      <link rel="stylesheet" type="text/css" href="assets/font/flaticon.css">
 
@@ -26,7 +26,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
-    <link rel="icon"  type="images/favicon.ico" />
+    <link rel="icon"  type="assets/images/favicon.png" />
 	
 	<!-- custom link -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -35,7 +35,7 @@
 <body>
 	<div class="page-bg-top">	    
         <header class="clear-fix">  
-            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="navbar">
                 <div class="container">
                     <a class="navbar-brand d-inline-block" href="index">
                     <img src="assets/images/logo-transparent.png" alt="" width="115">              

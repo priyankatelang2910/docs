@@ -25,6 +25,7 @@ const observer = new IntersectionObserver(
 document
   .querySelectorAll(".counter")
   .forEach((counter) => observer.observe(counter));
+
   // -------------------------------
 
 var swiper = new Swiper('.swiper-slide-three', {
@@ -66,5 +67,38 @@ var swiper = new Swiper('.swiper-slide-three', {
     },
   },
 }); 
+  /*---------------------------
+        :: Navbar on Scroll
+        -----------------------------*/     
+        var scrollTop = 0;
 
+        window.addEventListener(
+        "scroll",
+        function() {
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (st > scrollTop) {
+            
+            document.getElementById("navbar").classList.add("fixed-top", "scrolled");
+            } else {
+            
+            document.getElementById("navbar").classList.remove("fixed-top", "scrolled");
+            }
+        },
+        false
+        );
+// ----------------------
+jQuery("#totop").hide(),
+jQuery(window).scroll(function() {
+    "use strict";
+    jQuery(this).scrollTop() >= 1e3 ? (jQuery("#totop").fadeIn(200),
+    jQuery("#totop").addClass("top-visible")) : (jQuery("#totop").fadeOut(200),
+    jQuery("#totop").removeClass("top-visible"))
+}),
+jQuery("#totop").on("click", function() {
+    return jQuery("body,html").animate({
+        scrollTop: 0
+    }, 500),
+    !1
+});
 

@@ -1,21 +1,43 @@
+/*-------------------------------------------------------------------
+:: Common SCSS
+-------------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+  font-family: 'Sofia Pro Light'; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2;
+  color: #272829;
+  background-color: #fff;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  body {
+    font-size: 0.8rem; } }
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: var(--blue-color); }
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-red); }
+
 /* ----------------------------------------------------------
 :: Mixin CSS
 ---------------------------------------------------------- */
-@font-face {
-  font-family: 'Sofia Pro';
-  src: url("../fonts/Sofia Pro Regular.woff2") format("woff2"), url("Sofia Pro Regular.woff") format("woff");
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Sofia Pro Light';
-  src: url("../fonts/sofiapro-light.woff2") format("woff2"), url("sofiapro-light.woff") format("woff");
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Sofia Pro SemiBold';
-  src: url("../fonts/Sofia Pro SemiBold.woff2") format("woff2"), url("Sofia Pro SemiBold.woff") format("woff");
-  font-style: normal;
-  font-display: swap; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .bg-banner-size, .banner-img-1 {
   background-position: center center;
   background-size: cover;
@@ -27,37 +49,47 @@
 /* ----------------------------------------------------------
 :: Common CSS
 ---------------------------------------------------------- */
-/* Variables */
+:root {
+  --dark-yellow:#fdc648;
+  --light-yellow:#fdbd4d;
+  --light-arange:#fb9c43;
+  --dark-arange:#f4a261;
+  --blue-color:#1b6dc1;
+  --black-color:#242424;
+  --gray-color:#757575;
+  --white-color:#fff;
+  --darkgray-color:#2b2b2b; }
+
 /* Class */
 .gray-color {
-  color: #efefef; }
+  color: var(--gray-color); }
 
 .darkgray-color {
-  color: #2b2b2b; }
+  color: var(--darkgray-color); }
 
 .bulishblack-color {
-  color: #1b6dc1; }
+  color: var(--blue-color); }
 
 .black-color {
-  color: #242424; }
+  color: var(--black-color); }
 
 .tealblue-color {
-  color: #1b6dc1; }
+  color: var(--blue-color); }
 
 .goldenochre-color {
-  color: #fdc648; }
+  color: var(--dark-yellow); }
 
 .sandybrown-color {
-  color: #f4a261; }
+  color: var(--dark-arange); }
 
 .whitesmoke-color {
-  color: #f5f5f5; }
+  color: var(--white-color); }
 
 .bg-goldenochre-color {
-  background-color: #fdc648; }
+  background-color: var(--dark-yellow); }
 
 .bg-tealblue-color {
-  background-color: #1b6dc1; }
+  background-color: var(--blue-color); }
 
 .bg-banner-size, .banner-img-1 {
   background-position: center center;
@@ -96,35 +128,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparen; }
 
-/*-------------------------------------------------------------------
-:: Common SCSS
--------------------------------------------------------------------*/
-html {
-  scroll-behavior: smooth;
-  font-family: 'Sofia Pro Light'; }
-
-body,
-a,
-p {
-  font-family: 'Sofia Pro Light'; }
-
-* {
-  box-sizing: border-box; }
-  *::before {
-    box-sizing: border-box; }
-  *::after {
-    box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 ::selection {
-  color: #fff;
-  background: #1b6dc1; }
+  color: var(--white-color);
+  background: var(--blue-color); }
 
 ul,
 ol {
@@ -133,7 +139,7 @@ ol {
   margin: 0; }
 
 a {
-  color: #242424;
+  color: var(--black-color);
   text-decoration: none; }
   a:hover, a:focus {
     -webkit-transition: all 0.3s ease-out;
@@ -141,7 +147,7 @@ a {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    color: #1b6dc1; }
+    color: var(--blue-color); }
 
 h1,
 h2,
@@ -149,7 +155,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1b6dc1;
+  color: var(--blue-color);
   margin: 0;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -219,7 +225,7 @@ h6 {
   display: inline-table;
   padding: 18px 30px;
   font-weight: 600;
-  background-color: #fdc648;
+  background-color: var(--dark-yellow);
   border-radius: 10px;
   border: none; }
   .default-btn::before {
@@ -324,7 +330,7 @@ h6 {
         .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
           margin-right: 0px !important; }
         .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-          color: #fff;
+          color: var(--white-color);
           font-size: 0.9rem;
           display: block;
           line-height: 30px;
@@ -342,11 +348,11 @@ h6 {
               line-height: 10px;
               padding: 1em 5% 13px;
               text-align: left;
-              color: #1b6dc1; }
+              color: var(--blue-color); }
               .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-                color: #fff !important; }
+                color: var(--white-color) !important; }
                 .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
-                  background: #fff !important; } }
+                  background: var(--white-color) !important; } }
           .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:before {
             position: absolute;
             bottom: 0;
@@ -356,11 +362,11 @@ h6 {
             width: 0%;
             content: '.';
             color: transparent;
-            background: #fdc648;
+            background: var(--dark-yellow);
             height: 1px;
             transition: all .5s; }
           .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-            color: #fdc648; }
+            color: var(--dark-yellow); }
             .page-bg-top header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
               width: 100%; }
       .page-bg-top header .navbar .navbar-collapse .navbar-nav .dropdown-toggle:after {
@@ -372,7 +378,7 @@ h6 {
         color: inherit;
         float: right; }
     .page-bg-top header .navbar.scrolled {
-      background: #1b6dc1;
+      background: #141413f2;
       box-shadow: 0 2px 28px 0 #0000003d; }
       .page-bg-top header .navbar.scrolled .navbar-brand .logo {
         width: 55px; }
@@ -395,12 +401,12 @@ h6 {
         top: 100%;
         transform: scaleZ(1);
         width: 150px;
-        background: #fdc648;
+        background: var(--dark-yellow);
         border: 0;
         box-shadow: 0 0 15px 0 #0000001a;
         transform: translate3d(0, 10px, 0); }
       .page-bg-top header .navbar .nav-item:hover .nav-link {
-        color: #fff; }
+        color: var(--white-color); }
       .page-bg-top header .navbar .dropdown-menu.fade-up {
         top: 180%; }
       .page-bg-top header .navbar .nav-item:hover .dropdown-menu {
@@ -418,7 +424,7 @@ h6 {
         right: 0;
         min-width: 230px;
         height: 100%;
-        background: #fdc648;
+        background: var(--dark-yellow);
         box-shadow: 0 5px 10px 0 #0006;
         z-index: 9;
         padding: 20px; }
@@ -434,7 +440,7 @@ h6 {
         border: none;
         outline: none;
         background: transparent;
-        color: #fdc648;
+        color: var(--dark-yellow);
         box-shadow: none; } }
 
 /* Home Section */
@@ -472,7 +478,7 @@ h6 {
     font-size: 2.3rem;
     letter-spacing: .7px;
     font-weight: 700;
-    color: #fdc648;
+    color: var(--dark-yellow);
     text-transform: capitalize;
     line-height: 40px;
     margin: 20px 0; }
@@ -497,7 +503,7 @@ h6 {
   .home-section .bg-color-sm h6 {
     line-height: 1.5;
     font-size: 1.1rem;
-    color: #f5f5f5;
+    color: var(--white-color);
     font-weight: 600;
     margin: 0 0 20px; }
     @media only screen and (min-width: 600px) {
@@ -507,7 +513,7 @@ h6 {
       .home-section .bg-color-sm h6 {
         font-size: 1.1rem; } }
   .home-section .bg-color-sm p {
-    color: #f5f5f5;
+    color: var(--white-color);
     text-align: justify; }
 
 /* Wave effect */
@@ -590,23 +596,41 @@ h6 {
     top: 7px;
     left: 0px;
     border-radius: 0px 0 0px 0;
-    background: #1b6dc1;
+    background: var(--blue-color);
     display: block;
     z-index: 1; }
 
-.about-section .about-img {
+.about-section {
+  background: #000000d6;
+  background: url(../images/back-img.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid #b5b5b5;
   position: relative;
-  padding: 1rem; }
-  .about-section .about-img::before {
+  z-index: 0; }
+  .about-section:before {
     content: "";
-    background-color: #1b6dc1;
+    background: #1b6dc114;
     position: absolute;
-    left: -3px;
-    top: -3px;
-    width: 90%;
-    height: 90%;
-    border-radius: 10px 0px 10px 0px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
     z-index: -1; }
+  .about-section .about-img {
+    position: relative;
+    padding: 1rem; }
+    .about-section .about-img::before {
+      content: "";
+      background-color: var(--light-arange);
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      width: 90%;
+      height: 90%;
+      border-radius: 10px 0px 10px 0px;
+      z-index: -1; }
 
 .team:before {
   position: absolute;
@@ -634,17 +658,17 @@ h6 {
     font-size: 1.2rem; }
 
 .counter-timer {
-  background-color: #fdc64894; }
+  background-color: var(--light-arange); }
   .counter-timer .timer .data {
     text-align: center;
     border-right: 2px solid #000;
     width: 30%; }
     .counter-timer .timer .data h5 {
-      color: #1b6dc1;
+      color: var(--black);
       font-weight: 600;
-      font-size: 2rem; }
+      font-size: 2.5rem; }
     .counter-timer .timer .data i {
-      color: #1b6dc1;
+      color: var(--black);
       font-weight: 500;
       font-size: 3rem; }
     .counter-timer .timer .data p {
@@ -661,20 +685,20 @@ h6 {
   height: 35px;
   font-size: 30px;
   line-height: 20px;
-  background-color: #fdc648;
+  background-color: var(--dark-yellow);
   box-shadow: -4px 4px 0px 0px #01222e;
   right: 20px;
   bottom: 20px;
   border-radius: 5px;
-  border: 1px solid #fdc648;
+  border: 1px solid var(--dark-yellow);
   cursor: pointer;
   display: none;
   z-index: 1;
   color: #fff;
   transition: .6s ease-in; }
   .scroll-to-top:hover, .scroll-to-top:focus {
-    background: #1b6dc1;
-    border: 1px solid #1b6dc1;
+    background: var(--blue-color);
+    border: 1px solid var(--blue-color);
     outline: 0; }
 
 /*-----------------------*/
@@ -715,7 +739,7 @@ footer {
         position: absolute;
         right: 0;
         width: 100px;
-        background: #1b6dc1; }
+        background: var(--blue-color); }
       footer .footer-page .footer-title .footer-bar:after {
         bottom: -5px;
         content: "";
@@ -724,12 +748,12 @@ footer {
         right: 0;
         position: absolute;
         width: 50px;
-        background: #1b6dc1; }
+        background: var(--blue-color); }
     footer .footer-page .unit {
       display: flex;
       flex: 0 1 100%; }
       footer .footer-page .unit .icon {
-        color: #fff; }
+        color: var(--white-color); }
     footer .footer-page .icon-xs {
       font-size: 25px;
       line-height: 38px; }
@@ -737,14 +761,14 @@ footer {
     footer .footer-page .cont-us a {
       margin-left: 12px;
       font-size: 0.9rem;
-      color: #fff;
+      color: var(--white-color);
       font-family: "Raleway", sans-serif;
       font-weight: 500;
       font-size: 0.9rem;
       transition: all 0.6s; }
       footer .footer-page .cont-us address:hover,
       footer .footer-page .cont-us a:hover {
-        color: #1b6dc1; }
+        color: var(--blue-color); }
     footer .footer-page .list-group li {
       padding-left: 28px;
       position: relative; }
@@ -754,13 +778,13 @@ footer {
         left: 11px;
         top: 0;
         font-weight: 600;
-        color: #1b6dc1;
+        color: var(--blue-color);
         font-family: "FontAwesome"; }
       footer .footer-page .list-group li a {
         color: #010225;
         transition: 0.4s; }
         footer .footer-page .list-group li a:hover {
-          color: #fff;
+          color: var(--white-color);
           margin-left: 5px; }
     footer .footer-page .social-icon {
       margin: 15px 0 0; }
@@ -806,6 +830,51 @@ footer {
     footer .footer-bottom .footer-right a {
       color: rgba(255, 255, 255, 0.5);
       font-size: .8rem; }
+
+/* ----------------------------------------------------------
+:: Scroll to Top CSS
+---------------------------------------------------------- */
+#totop.top-visible {
+  animation: jump 4s infinite; }
+
+#totop.top-visible {
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  display: inline; }
+
+#totop {
+  font-weight: 900;
+  color: var(--black-color);
+  display: none;
+  position: fixed;
+  right: 47px;
+  top: 90%;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  text-align: center;
+  padding-top: 3px;
+  line-height: 34px;
+  border-radius: 3px;
+  background-color: var(--dark-yellow);
+  transition: .3s ease-in-out; }
+  @media screen and (max-width: 992px) and (min-width: 320px) {
+    #totop {
+      right: 25px;
+      top: 80%; } }
+
+@keyframes jump {
+  0% {
+    bottom: 20px; }
+  50% {
+    bottom: 40px; }
+  100% {
+    bottom: 20px; } }
+#totop.top-visible {
+  animation: jump 4s infinite;
+  -webkit-animation: jump 4s infinite; }
 
 /* ----------------------------------------------------------
 :: Responsive CSS
